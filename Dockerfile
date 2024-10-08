@@ -82,5 +82,3 @@ RUN \
 WORKDIR /workspace
 COPY . /workspace
 
-RUN mkdir /workspace/datasets/Unimib_SHAR
-RUN unzip /workspace/datasets/Unimib_SHAR.zip -d /workspace/datasets/Unimib_SHAR
