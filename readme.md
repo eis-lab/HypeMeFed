@@ -4,6 +4,8 @@ These codes demonstrate a proof-of-concept for a novel federated learning techni
 
 You can find the code for the paper [here](https://github.com/eis-lab/HypeMeFed) or you can download the code from [here](https://www.dropbox.com/scl/fi/t5iwhm3foizk7v2dnw68u/HypeMeFed.zip?rlkey=zxtlfz3h0n5ozei40xrcs9sx4&dl=0).
 
+If you have any questions, please feel free to contact us at [yujin_shin@yonsei.ac.kr](mailto:Yujin).
+
 ## Requirements if not using Docker
 - PyTorch: 2.2.2+cu121
 - Python: 3.8.10
