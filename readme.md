@@ -31,13 +31,14 @@ docker run -it hypemefed
 Once the Docker container is running, you can execute the project using the following command format:
 
 ```bash
-python3 main.py --dataset=[unimib | stl10 | svhn] --iid=[float] --gpu=[int]
+python3 main.py --dataset=[unimib | stl10 | svhn] --iid=[float] --gpu=[int] --use_hn=[str:True|False]
 ```
 
 ### Command Line Arguments
 - `--dataset`: The dataset to use. Options are `unimib`, `stl10`, and `svhn`.
 - `--iid`: The percentage of IID data to use. Must be a float between 0 and 1.
 - `--gpu`: The GPU to use. Must be an integer.
+- `--use_hn`: Whether to use the hypernetwork. Options are `True` and `False`. Default is `True`. Due to the information disparity, when `--use_hn=False`, the model will not use the hypernetwork and will not converge, especially on small datasets such as `unimib`.
 
 ### Example
 ```bash
@@ -54,8 +55,7 @@ The results of the experiments will print to the console. The results will inclu
 
 ## Additional Information
 ### Expected Execution Time for Each Dataset
-We provide an estimate of the expected execution time for each dataset. The times are approximate and may vary depending on the hardware and environment. The times are based on the following environment: `Intel i9-10900K` + `NVIDIA RTX 3090` + `64
-GB RAM`.
+We provide an estimate of the expected execution time for each dataset. The times are approximate and may vary depending on the hardware and environment. The times are based on the following environment: `Intel i9-10900K` + `NVIDIA RTX 3090` + `64GB RAM`.
 - `unimib`: 1~2 hours
 - `stl10`: 4~5 hours
 - `svhn`: 10~12 hours

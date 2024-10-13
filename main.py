@@ -216,7 +216,6 @@ if __name__ == '__main__':
 
         n_exit_levels = len(EXIT_LEVELS)
         participating_client_idxs = select_participants(clients, PARTICIPANTS, round, n_exit_levels)
-        # print(participating_client_idxs)
         participating_clients = [clients[i] for i in participating_client_idxs]
         
         losses_by_model_exit_level = {}
